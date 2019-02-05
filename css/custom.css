@@ -20,6 +20,10 @@ body {
   background-color: #0e243d;
 }
 
+.aboutme .text-muted{
+    color: #669fd1 !important;
+}
+
 .carousel {
   background-color: #343a40;
   margin-bottom: 4rem;
@@ -36,10 +40,10 @@ body {
 
 .carousel-item > img {
   position: absolute;
-  top: 0;
+  top: -15%;
   left: 0;
   min-width: 100%;
-  height: 30rem;
+  height: 40rem;
 }
 
 .marketing .col-lg-4 {
@@ -182,6 +186,13 @@ li.game-item .meta {
       padding: 0px;
 }
 
+.carousel-inner{
+  overflow: hidden;
+}
+
+.carousel-item.active, .carousel-item-next, .carousel-item-prev{
+  overflow: hidden;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -264,6 +275,14 @@ li.game-item .meta {
 
   .container {
     width: 90%;
+  }
+
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: -80%;
+    max-width: 1200px;
+    height: 30rem;
   }
 
   }
