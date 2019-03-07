@@ -82,7 +82,7 @@ a.anchor {
   padding-bottom: 45px;
   padding-top: 45px;
 
-  background-image: url("../images/capture.png");
+  background-image: url("../images/coverH.jpg");
   height: 100%; 
   background-attachment: fixed;
   background-position: center;
@@ -117,7 +117,7 @@ a.anchor {
     text-align: left;
     right: 0;
     left: 0;
-    top: 0;
+    /* top: 0; */
     bottom: 0;
     padding-bottom: 0;
     padding-top: 0;
@@ -125,7 +125,7 @@ a.anchor {
 }
 
 .carousel-item {
-  height: 23rem;
+  height: 25rem;
 }
 
 .carousel-indicators li{
@@ -234,20 +234,10 @@ a.anchor {
   border: dotted;
 }
 
-.featurette-divider {
-  margin: 5rem 0;
-}
-
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -.05rem;
-}
-
 footer {
   padding-top: 1rem;
   padding-bottom: 0;
-  background: rgb(23, 31, 56);
+  background: black;
   color: white;
 }
 
@@ -347,11 +337,13 @@ li.game-item .meta {
 }
 
 .carousel-caption h1 {
+  border-radius: 0px 50px 0px 0px;
   display: inline-block;
   text-align: center;
-  padding: 10px;
+  padding: 2px 30px 5px 10px;
   background: #00000070;
   font-size: 2rem;
+  margin-bottom: 0;
 }
 
 .carousel-inner{
@@ -372,20 +364,8 @@ li.game-item .meta {
     font-size: 1.1rem;
     line-height: 1.4;
   }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-
 }
 
-@media (min-width: 62em) {
-
-  .featurette-heading {
-    margin-top: 7rem;
-  }
-
-}
 
   @media only screen and (max-width:1280px) {
 
@@ -436,12 +416,12 @@ li.game-item .meta {
       text-align: left;
       right: 0;
       left: 0;
-      top: 0;
+      /* top: 0; */
       bottom: 0;
       padding-bottom: 0;
       padding-top: 0;
       z-index: 10;
-    }
+  }
 
     section.content-wrapper {
     padding : 20px 5px;
@@ -498,12 +478,24 @@ li.game-item .meta {
   }
 
   .carousel-caption h1 {
+    border-radius: 0px 0px 35px 35px;
     width: 100%;
     text-align: center;
-    padding: 10px;
+    padding: 5px 25px 8px 25px;
     background: #00000070;
     font-size: 2rem;
   }
+
+  .carousel-caption {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    z-index: 10;
+}
 
 }
   
