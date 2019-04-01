@@ -678,18 +678,18 @@ li.game-item .meta {
     margin: auto;
     }
 
-    .video-title {
+    .caption{
       position: absolute;
-      right: 0;
-      top: 25%;
-      left: 0;
+      right: 15%;
+      top: 10%;
+      left: 15%;
       z-index: 10;
       padding-top: 20px;
       padding-bottom: 20px;
       color: #fff;
       text-align: center;
       text-transform: uppercase;
-  }
+    }
 
   .container-gallery .row .col-md-4{
     width: 50%;
