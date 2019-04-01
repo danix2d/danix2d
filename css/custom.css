@@ -2,7 +2,11 @@ html{
   scroll-behavior: smooth;
 }
 
-
+.about{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: rgb(136, 136, 136);
+}
 
 * {
   box-sizing: border-box;
@@ -100,7 +104,7 @@ html{
 }
 
 .icon img{
-    width: 50%;
+    width: 60%;
     height: auto;
     display: block;
     margin: auto;
@@ -134,17 +138,10 @@ html{
 }
 
 .featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 3rem 0; /* Space out the Bootstrap <hr> more */
 }
 
-.caption{
-  position: absolute;
-  top: 10rem;
-  color: white;
-  z-index: 50;
-  left: 48rem;
-  text-align: center;
-}
+
 
 .divider{
 position: relative; 
@@ -153,7 +150,20 @@ z-index: 100;
 }
 
 .coverImg{
-  border-radius: 10px;
+  display: block;
+  width: 250px;
+  height: auto;
+  transform : scale(1,1);
+  transition : all 0.15s ease-in-out;
+}
+
+.coverImg:hover{
+  transform : scale(1.05,1.05);
+  transition : all 0.15s ease-in-out;
+}
+
+.logoImg {
+  width: 70%;
   height: auto;
   margin: auto;
   display: block;
@@ -245,7 +255,7 @@ a.anchor {
   object-fit: cover;
   object-position: center;
   width: 100%;
-  height: 430px;
+  height: 400px;
   margin-bottom: 50px;
   margin-top: 70px;
 }
@@ -254,65 +264,41 @@ a.anchor {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 215px;
+  top: 0;
   text-align: center;
+  margin-top: 40px;
+  height: 450px;
 }
 
+.containerButtons .btn{
+  position: relative;
+  top: 400px;
+  bottom: 0;
+  font-size: 20px;
+  width: 150px;
+  margin: auto;
+  margin-right: 10px;
+}
 
 
 .container {
   max-width: 1220px;
 }
 
-.carousel {
-  background-color: #1D1B26 !important;
-  margin-bottom: 4rem;
-}
-
-.carousel-item {
+#video-bg {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
   height: 40rem;
 }
-
-.carousel-indicators li{
-  border-radius: 50px;
-  width: 11px;
-  height: 11px;
-  border-width: 0.1rem;
-  border-style: solid;
-  border-color: white;
-  margin-right: 5px;
-  margin-left: 5px;
-  background-color: rgba(0, 0, 0, 0);
+video {
+  display: block;
 }
-
-#myVideo {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
+.video-container {
   width: 100%;
-  height: auto;
-  z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-
-
-
-.slideTitle{
-  background-color: #00000060;
-  position: absolute;
-  top: 75%;
-  left: 5%;
-  color: white;
-}
-
-.slideTitle h1{
-  font-size: 2rem;
-  margin: 0.5rem;
+  max-height: 40rem;
+  overflow: hidden;
+  z-index: -100;
 }
 
 .centerBlock {
@@ -324,11 +310,16 @@ a.anchor {
 .gamesSection{
   color: #7e7e7e;
   text-align: center;
-  margin-top: 200px;
-  margin-bottom: 150px;
+  margin-top: 150px;
+  margin-bottom: 100px;
   border-bottom-style: solid;
   border-width: 1px;
   border-color: #b1b1b1;
+}
+
+.asd{
+  display: flex;
+  width: 90%;
 }
 
 .aboutSection{
@@ -395,10 +386,6 @@ li a:hover{
 .marketing .col-lg-4 p {
   margin-right: .75rem;
   margin-left: .75rem;
-}
-
-.marketing .col-lg-4{
-  border: dotted;
 }
 
 footer {
@@ -558,7 +545,7 @@ li.game-item .meta {
 }
 
 
-.caption-title{
+.caption{
   position: absolute;
   right: 15%;
   top: 30%;
@@ -571,34 +558,25 @@ li.game-item .meta {
   text-transform: uppercase;
 }
 
-.caption-title .lead{
+.caption .lead{
   font-size: 3rem;
   font-weight: 500;
   text-shadow: 1px 2px 9px #000000;
 }
 
-.carousel-caption{
+.video-overlay{
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 640px;
   z-index: 10;
   background: #1d1b261c;
   right: 0;
-  bottom: 0;
+  top: 0;
   left: 0;
   z-index: 10;
   padding-top: 0;
   padding-bottom: 0
 }
-
-.carousel-inner{
-  overflow: hidden;
-}
-
-.carousel-item.active, .carousel-item-next, .carousel-item-prev{
-  overflow: hidden;
-}
-
 
 .box-shadow { 
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
@@ -624,11 +602,6 @@ li.game-item .meta {
 
   @media only screen and (min-width:150px) and (max-width:1150px) {
 
-    #myVideo{
-      width: auto !important; 
-      height: 100%;
-    }
-
   }
 
   @media only screen and (min-width:150px) and (max-width:991px){
@@ -638,12 +611,6 @@ li.game-item .meta {
   }
 
   @media only screen and (min-width:150px) and (max-width:980px) {
-
-  .jumbotron {
-    margin-top: 5rem;
-    padding: 5rem 5rem;
-  }
-
 
   div.wrap {
   padding : 0 20px;
@@ -667,10 +634,6 @@ li.game-item .meta {
   margin: auto;
   }
 
-  #myVideo{
-    width: auto !important; 
-    height: 100%;
-  }
 
   }
 
@@ -682,6 +645,12 @@ li.game-item .meta {
       display: block;
       margin: auto;
   }
+
+  .coverImg{
+    margin: auto;
+    float: none;
+  }
+
 
   .text{
     text-align: center;
@@ -709,12 +678,7 @@ li.game-item .meta {
     margin: auto;
     }
 
-    #myVideo{
-      width: auto !important; 
-      height: 100%;
-    }
-
-    .caption-title {
+    .video-title {
       position: absolute;
       right: 0;
       top: 25%;
@@ -755,10 +719,6 @@ li.game-item .meta {
 
   li.game-item {
   width : 100%;
-  }
-
-  .carousel{
-    margin-top: 70px;
   }
 
   .container-gallery .row .col-md-4{
