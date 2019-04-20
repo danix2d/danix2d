@@ -199,7 +199,13 @@ a.anchor {
 }
 
 .fixed-top{
-  background-color: #1D1B26 !important;
+  background-color: #1d1b264d !important;
+  box-shadow: 0 0 5px #1d1b2685;
+  -webkit-transition: background 0.25s;
+  -moz-transition: background 0.25s;
+  -ms-transition: background 0.25s;
+  -o-transition: background 0.25s;
+  transition: background 0.25s;
 }
 
 .nav{
@@ -255,9 +261,10 @@ a.anchor {
   object-fit: cover;
   object-position: center;
   width: 100%;
-  height: 400px;
+  height: 470px;
   margin-bottom: 50px;
-  margin-top: 70px;
+  padding-top: 70px;
+  background-color: #050c41;
 }
 
 .containerButtons{
@@ -589,13 +596,14 @@ li.game-item .meta {
   width: 100%;
   height: 640px;
   z-index: 10;
-  background: #1d1b261c;
+  background: #001e3f;
   right: 0;
   top: 0;
   left: 0;
   z-index: 10;
   padding-top: 0;
-  padding-bottom: 0
+  padding-bottom: 0;
+  opacity: 0.3;
 }
 
 .box-shadow { 
