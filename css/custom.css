@@ -317,6 +317,26 @@ video {
   border-color: #b1b1b1;
 }
 
+.error{
+  color:rgb(58, 120, 179);
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 25px;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #b1b1b1;
+}
+
+.bug{
+  color:rgb(58, 120, 179);
+  text-align: center;
+}
+
+.error h1{
+  color:rgb(58, 120, 179);
+  font-size: 55px;
+}
+
 .asd{
   display: flex;
   width: 90%;
@@ -605,6 +625,10 @@ li.game-item .meta {
   }
 
   @media only screen and (min-width:150px) and (max-width:991px){
+    .nav-item{
+      padding: 15px;
+      float: none;
+    }
     .nav{
       float: none;
     }
@@ -640,7 +664,7 @@ li.game-item .meta {
   @media only screen and (min-width:150px) and (max-width:768px) {
 
     .icon img{
-      width: 30%;
+      width: 230px;
       height: auto;
       display: block;
       margin: auto;
