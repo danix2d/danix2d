@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Page Not Found</title>
 <link href="css/bootstrap.css" rel="stylesheet">
-<link rel="shortcut icon" type="image/x-icon" href="images/icon.png" />
+<link rel="shortcut icon" type="image/x-icon" href="images/logo/icon.png" />
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -19,60 +19,70 @@
       }
     </style>
     <!-- Custom styles for this template -->
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/errorpage.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
   <body>
 
       <header>
             
-          <nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-              <a href="https://danix2d.com/" class="navbar-brand d-flex align-items-center">
-                <img src="images/logo.png"  width="128" height="100%"></img>
-              </a>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0" id="navbar">
+            <div class="container-navbar">
               <button class="navbar-toggler btn btn-sm btn-outline-danger" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border-radius: 60px;padding: 0rem 0.4rem 0rem 0.4rem;border: 2px solid #dc3545;" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">
                   <i class="fas fa-caret-down" style="font-size:35px; color:white;"></i>
             </button>
 
               <div class="collapse navbar-collapse" id="navbarNav">
                       <div class="col-md text-center">
-                        <ul class="nav">
+                        <ul class="nav jumbotron-heading font-weight-normal">
                               <li class="nav-item">
-                                  <a class="btn btn-sm btn-outline-danger" style="border-radius: 1rem; border: 2px solid #dc3545; color:white" href="https://danix2d.com/" role="button">HOME</a>
+                                  <a  href="#">Home</a>
                               </li>
                               <li class="nav-item">
-                                  <a class="btn btn-sm btn-outline-danger" style="border-radius: 1rem; border: 2px solid #dc3545; color:white" href="https://danix2d.com/#games" role="button">GAMES</a>
+                                  <a  href="#games">Games</a>
                               </li>
                               <li class="nav-item">
-                                  <a class="btn btn-sm btn-outline-danger" style="border-radius: 1rem; border: 2px solid #dc3545; color:white" href="https://danix2d.com/#how" role="button">HOW I DO IT</a>
+                                  <a  href="#gallery">Art</a>
                               </li>
                               <li class="nav-item">
-                                  <a class="btn btn-sm btn-outline-danger" style="border-radius: 1rem; border: 2px solid #dc3545; color:white"  href="https://danix2d.com/#contact" role="button">CONTACT</a>
+                                  <a  href="#about">About</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a  href="#contact">Contact</a>
                               </li>
                             </ul>
                     </div>
               </div>
             </div>
             </nav>
-          
+
 
 </header
 
 <main role="main">
 
-  <div class="container">
-  <div class="error">
-      <h1><i class="fas fa-bug" style="font-size:55px; color:rgb(0, 88, 170)"></i> 404</h1>
-  </div>
-  <div class="bug">
-      <h2 class="">PAGE NOT FOUND</h2>
-      <h5 class="">The page you requested could not be found. Please go back to the homepage.</h5>
-      <a class="btn btn-lg btn-primary" href="https://danix2d.com/" role="button">HOMEPAGE</a>
+<div class="container marketing">
+    <div class="row featurette">
+        <div class="col-md-5 text-center">
+            <h1><i class="fas fa-bug" style="font-size:200px; color:rgb(0, 88, 170)"></i></h1>
+        </div>
+      <div class="col-md-7 pad">
+        <h2 class="featurette-heading">Oh no, <span class="text-muted">you broke the internet</span></h2>
+        <p class="lead">Maybe you typed the wrong URL or the page you wanted has been
+            removed. Don’t worry, it’s not the end of the world. Simply click here <a class="btn btn-primary" href="https://danix2d.com" role="button">HOME</a>
+            to go to the Danix2D home page and try not to break the internet this time.</p>
+      </div>
     </div>
-</div>
+  </div><!-- /.container -->
 
 </main>
+
+<footer class="">
+    <div class="footer-copyright">
+      <p class="lead">Copyright © 2019 Danix2D. All rights reserved.</p>
+    </div>
+
+</footer>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

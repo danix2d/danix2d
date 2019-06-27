@@ -9,89 +9,89 @@
     <meta name="author" content="Danny">
     <meta title="">
     <title>Danix2D</title>
+    
 <link rel="canonical" href="https://danix2d.com" />
 <link href="css/bootstrap.css" rel="stylesheet">
-<link rel="shortcut icon" type="image/x-icon" href="images/icon.png" />
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-      }
+<link rel="shortcut icon" type="image/x-icon" href="images/logo/icon.png" />
+<link href="css/album.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="css/custom.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  </head>
+</head>
   <body>
 
-      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up" style="font-size:30px;"></i></button>
+      <button onclick="topFunction()" id="goTop" title="Go to top"><i class="fas fa-angle-up" style="font-size:30px;"></i></button>
 
       <header>
             
-          <nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
-            <div class="container">
-              <a href="#" class="navbar-brand d-flex align-items-center">
-                <img src="images/logo.png"  width="128" height="100%"></img>
-              </a>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0" id="navbar">
+            <div class="container-navbar">
               <button class="navbar-toggler btn btn-sm btn-outline-danger" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border-radius: 60px;padding: 0rem 0.4rem 0rem 0.4rem;border: 2px solid #dc3545;" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">
                   <i class="fas fa-caret-down" style="font-size:35px; color:white;"></i>
             </button>
 
               <div class="collapse navbar-collapse" id="navbarNav">
                       <div class="col-md text-center">
-                        <ul class="nav">
+                        <ul class="nav jumbotron-heading font-weight-normal">
                               <li class="nav-item">
-                                  <a class="btn btn-sm btn-outline-danger" style="border-radius: 1rem; border: 2px solid #dc3545; color:white" href="#" role="button">HOME</a>
+                                  <a  href="#">Home</a>
                               </li>
                               <li class="nav-item">
-                                  <a class="btn btn-sm btn-outline-danger" style="border-radius: 1rem; border: 2px solid #dc3545; color:white" href="#games" role="button">GAMES</a>
+                                  <a  href="#games">Games</a>
                               </li>
                               <li class="nav-item">
-                                  <a class="btn btn-sm btn-outline-danger" style="border-radius: 1rem; border: 2px solid #dc3545; color:white" href="#how" role="button">HOW I DO IT</a>
+                                  <a  href="#gallery">Art</a>
                               </li>
                               <li class="nav-item">
-                                  <a class="btn btn-sm btn-outline-danger" style="border-radius: 1rem; border: 2px solid #dc3545; color:white"  href="#contact" role="button">CONTACT</a>
+                                  <a  href="#about">About</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a  href="#contact">Contact</a>
                               </li>
                             </ul>
                     </div>
               </div>
             </div>
             </nav>
-          
+
 
 </header
 
-<main role="main">
+    <main role="main">
 
-  <div class="video-container">
-                  <video autoplay="" muted="" loop="" id="video-bg">
-                      <source src="images/dark.mp4" type="video/mp4">
-                  </video>
-            <div class="video-overlay"></div>
-            <div class="caption">
-                <h1 class="lead mt-2"><p>Danix2D</p>independent game developer for mobile platforms</h1>
-          </div>
-  </div>
 
-  <div class="container">
-      <a class="anchor" id="games"></a>
-  <div class="gamesSection">
-      <h2><div class= "gam" >Discover my most recent games</div></h2>
-  </div>
-</div>
+          
+          <div class="container-video p-0 mt-4 mb-4">
+              <div class="overlay"></div>
+              <section class="text-center caption">
+                  <div class="logo">
+                      <a href="#" class="">
+                        <img src="images/logo/logo.png"  width="200" height="100%"></img>
+                      </a>
+                    </div>
+                  <h1 class="jumbotron-heading font-weight-bold">Danix2D</h1>
+                  <h2 class="jumbotron-heading font-weight-normal">Independent game developer</h2>
+                  <p class="lead font-weight-normal">Discover my most recent games for mobile platforms or checkout my game art</p>
+                  <p>
+                      <a href="#" class="btn btn-primary my-2">Games</a>
+                      <a href="#" class="btn btn-secondary my-2">Game Art</a>
+                    </p>
+            </section>
+              <div class="">
+                  <div class="full video-container">
+                      <video autoplay="" muted="" loop="" id="video-bg">
+                          <source src="images/video/dark.mp4" type="video/mp4">
+                      </video>
+             </div>
+              </div>
+            </div>
 
-<div class="container">
-        <!-- START THE FEATURETTES -->
+    <div class="container game-container">
+        <a class="anchor" id="games"></a>
 
-        <div class="row featurette">
-            <div class="col-md-3 ml-auto">
-                <a class="iconBtn" href="https://danix2d.com/darkalone.html" role="button"><img class="coverImg img-fluid" src="images/DarkAloneIcon.png"></a>
+
+        <div class="row games">
+            <div class="col-md-3 m-auto">
+                <a class="iconBtn" href="https://danix2d.com/darkalone.html" role="button"><img class="coverImg img-fluid" src="images/darkalone/DarkAloneIcon.png"></a>
             </div>
             <div class="text col-md-6 mr-auto">
                 <h2 class="featurette-heading">DARK ALONE</h2>
@@ -101,127 +101,141 @@
                 <p>Genre: Adventure, Platformer, Side-Scroller</p>
                 </div>
                 <p class="lead">Embark on the adventure of the unknown world of a computer simulation. Jump trough spikes and blades, collect the bits to unlock the matrix or else the world will...<a class="btn btn-sm btn-outline-primary" href="https://danix2d.com/darkalone.html" role="button">Read More</a></p>
-                <div class="marketBtn">
+                <div class="marketBtn text-center">
                   <a class="btn btn-primary mr-2" href="#" role="button">Coming Soon</a>
                 </div></div>
           </div>
 
-          <hr class="featurette-divider">
-
-        <!-- /END THE FEATURETTES -->
-
       </div><!-- /.container -->
+    
+    <section class="jumbotron text-center mb-0 pb-0">
+        <a class="anchor" id="gallery"></a>
+        <div class="container">
+          <h1 class="jumbotron-heading">GAME ART GALLERY</h1>
+        </div>
+        <hr class="featurette-divider mt-0 mb-0">
+      </section>
 
-      
 
 
-
-
-      <div class="container-aboutme text-center">
-          <a class="anchor" id="how"></a>
-          <div class="container">
-          <div class="row">
-
-            <div class="col-lg-4">
-                <i class="fab far fa-user-circle" style="font-size:55px; color:white"></i>
-               <h4 class="text-white mt-2">ABOUT ME</h4>
-               <p class="text-white">My name is Danny and I am a young self-taught independent game developer. I do everything in the development process of my games, 
-                like the coding, game-art, drawing 2D or modeling 3D assets, level-design, debugging and testing.</p>
-           </div>
-
-            <div class="col-lg-4">
-                <i class="fab fa-codepen" style="font-size:55px; color:white"></i>
-                <h4 class="text-white mt-2">SOFTWARE</h4>
-                <p class="text-white">To make my games, I use Unity a 3D cross-platform game development engine and C# programming language. 
-                  I make my 2D assets with Krita, which is a free, open source painting program. For 3D assets I use Blender, which is also a free, but very powerful 3D modeling software.
-                </p>
-              </div>
-
-              <div class="col-lg-4">
-                    <i class="fab fas fa-gamepad" style="font-size:55px; color:white"></i>
-                  <h4 class="text-white mt-2">HAVING FUN</h4>
-                  <p class="text-white">It's fun expressing my ideas to me and my friends as something you can see and touch. Watching my friends play the games I make, always amuses me. 
-                    Get my games from <a class="btn btn-outline-light" href="#" role="button">Google Play</a> and I hope you enjoy them too.</p>
-                </div>
-
+      <div class="container">
+          <div class="containerImg">
+            <div class="big"><img src="images/gallery/Thumbnail.png" alt=""></div>
+            <div class="big"><img src="images/gallery/Thumbnail.png" alt=""></div>
+            <div class="big"><img src="images/gallery/Thumbnail.png" alt=""></div>
           </div>
         </div>
-    </div>
-
-
-
-</main>
-
-      <footer class="">
-          <div class="container">
-              <a class="anchor" id="contact"></a>
-            <div class="row">
-
-              <div class="col-md-6">
-                  <div class="centerBlock">
-                      <div class="socialLinks"><p class="lead">Social Links</p></div>
-                      <ul class="link">
-                        	<li>
-                                <a class = "social" href="https://twitter.com/danix2d" target="_blank" rel="nofollow"> <i class="fab fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a class = "social" href="https://www.facebook.com/danix2d" target="_blank" rel="nofollow"><i class="fab fa-facebook-f"></i></a>
-                            </li>
-                            <li>
-                                <a class = "social" href="" target="_blank" rel="nofollow"><i class="fab fa-google-play"></i></a>
-                            </li>
-                            <li>
-                                <a class = "social" href="https://www.youtube.com/channel/UCa2J0-Q47psyadMpNeN633g" target="_blank" rel="nofollow"><i class="fab fa-youtube"></i></a>
-                            </li>                            
-                        </ul>
-                        <div class="socialLinks"><p class="lead">Contact Email</p></div>
-                        <p class="lead"><a href="mailto:email.danix2d@gmail.com"  style="font-size: 25px; color: #868383;"><i class="fas fa-envelope"></i> email.danix2d@gmail.com</a></p>
-                      </div>
-              </div>
-
-                <div class="col-md-6">
-                      <img class="logoImg" src="images/logo.png">
-                </div>
-  
-            </div>
-          </div>
-
-          <div class="footer-copyright">
-            <p class="lead">Copyright © 2019 Danix2D. All rights reserved.</p>
-        </div>
-
-
-      </footer>
         
 
-      <script>
-          // When the user scrolls down 20px from the top of the document, show the button
-          window.onscroll = function() {scrollFunction()};
-          
-          function scrollFunction() {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-              document.getElementById("myBtn").style.visibility = "visible";
-              document.getElementById("myBtn").style.opacity = "1";
-            } else {
-              document.getElementById("myBtn").style.opacity = "0";
-              document.getElementById("myBtn").style.visibility = "hidden";
-            }
 
-            if (document.body.scrollTop > 490 || document.documentElement.scrollTop > 490) {
-              document.getElementById("navbar").setAttribute( 'style', 'background-color: #050c41 !important ' );
-            } else {
-              document.getElementById("navbar").setAttribute( 'style', 'background-color: #1d1b264d !important ' );
-            }
-          }
-          
-          // When the user clicks on the button, scroll to the top of the document
-          function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-          }
-          </script>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-</body>
+      <div class="container marketing">
+          <a class="anchor" id="about"></a>
+          
+          <div class="row featurette">
+              <div class="col-md-5 text-center">
+                  <i class="fab far fa-user-circle" style="font-size:200px; color:rgb(70, 70, 70)"></i>
+              </div>
+            <div class="col-md-7 pad">
+              <h2 class="featurette-heading">About Me</h2>
+              <p class="lead">My name is Danny and I am a young self-taught independent game developer. I do everything in the development process of my games, 
+                  like the coding, game-art, drawing 2D or modeling 3D assets, level-design, debugging and testing.</p>
+            </div>
+          </div>
+  
+          <hr class="featurette-divider">
+  
+          <div class="row featurette">
+              <div class="col-md-5 order-md-2 text-center">
+                  <i class="fab fa-codepen" style="font-size:200px; color:rgb(70, 70, 70)"></i>
+              </div>
+            <div class="col-md-7 order-md-1 pad">
+              <h2 class="featurette-heading">Software</h2>
+              <p class="lead">To make my games, I use <a class="btn btn-outline-secondary" href="https://unity.com/" role="button">UNITY</a> a 3D cross-platform game development engine and C# programming language. 
+                  I make my 2D assets with <a class="btn btn-outline-secondary" href="https://krita.org" role="button">KRITA</a> which is a free, open source painting program. For 3D assets I use <a class="btn btn-outline-secondary" href="https://www.blender.org/" role="button">BLENDER</a> which is also a free, but very powerful 3D modeling software.</p>
+            </div>
+          </div>
+  
+          <hr class="featurette-divider">
+  
+          <div class="row featurette">
+              <div class="col-md-5 text-center">
+                  <i class="fab fas fa-gamepad" style="font-size:200px; color:rgb(70, 70, 70)"></i>
+              </div>
+            <div class="col-md-7 pad">
+              <h2 class="featurette-heading">Having fun,<span class="text-muted"> always!</span></h2>
+              <p class="lead">It's fun expressing my ideas to me and my friends as something you can see and touch. Watching my friends play the games I make, always amuses me. 
+                  Get my games from <a class="btn btn-primary" href="#" role="button">Google Play</a> and I hope you enjoy them too.</p>
+            </div>
+          </div>
+        </div><!-- /.container -->
+        
+    </main>
+
+    <footer class="">
+        <div class="container">
+            <a class="anchor" id="contact"></a>
+          <div class="row">
+
+            <div class="col-md-6">
+                <div class="centerBlock">
+                    <div class="socialLinks"><p class="lead">Social Links</p></div>
+                    <ul class="link">
+                          <li>
+                              <a class = "social" href="https://twitter.com/danix2d" target="_blank" rel="nofollow"> <i class="fab fa-twitter"></i></a>
+                          </li>
+                          <li>
+                              <a class = "social" href="https://twitter.com/danix2d" target="_blank" rel="nofollow"> <i class="fab fa-twitter"></i></a>
+                          </li>
+                          <li>
+                              <a class = "social" href="" target="_blank" rel="nofollow"><i class="fab fa-google-play"></i></a>
+                          </li>
+                          <li>
+                              <a class = "social" href="https://www.youtube.com/channel/UCa2J0-Q47psyadMpNeN633g" target="_blank" rel="nofollow"><i class="fab fa-youtube"></i></a>
+                          </li>                            
+                      </ul>
+                      <div class="socialLinks"><p class="lead">Contact Email</p></div>
+                      <p class="lead text-center"><a href="mailto:email.danix2d@gmail.com"  style="font-size: 25px; color: #868383;"><i class="fas fa-envelope"></i> email.danix2d@gmail.com</a></p>
+                    </div>
+            </div>
+
+              <div class="col-md-6">
+                    <img class="logoImg" src="images/logo/logo.png">
+              </div>
+
+          </div>
+        </div>
+
+        <div class="footer-copyright">
+          <p class="lead">Copyright © 2019 Danix2D. All rights reserved.</p>
+        </div>
+
+
+    </footer>
+
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.getElementById("goTop").style.visibility = "visible";
+            document.getElementById("goTop").style.opacity = "1";
+          } else {
+            document.getElementById("goTop").style.opacity = "0";
+            document.getElementById("goTop").style.visibility = "hidden";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>

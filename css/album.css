@@ -1,0 +1,336 @@
+  html{
+    scroll-behavior: smooth;
+  }
+
+  body{
+    background-color: white !important;
+    width: 100%;
+  }
+
+  .nav{
+    display: inline-block;
+  }
+  
+  .nav-item{
+    padding: 10px 15px 10px 15px;
+    font-size: 20px;
+    float: left;
+  }
+
+  .nav-item a{
+    color: #3d3e47;
+  }
+
+  .navbar{
+    background-color: white !important;
+  }
+
+  .container-navbar{
+    padding: 0px 20px 0px 20px;
+    margin: auto;
+    width: 95%;
+    display: flex;
+    background-color: white !important;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: rgb(219, 219, 219);
+  }
+
+  .logo{
+    width: 100%;
+    padding: 85px;
+    padding-bottom: 100px
+  }
+
+  .logoImg {
+    width: 70%;
+    height: auto;
+    margin: auto;
+    display: block;
+  }
+
+  #video-bg {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 37rem;
+    border-radius: 15px;
+  }
+  video {
+    display: block;
+  }
+  .container-video{
+    max-width: 1300px;
+    width: 97%;
+    position: relative;
+    margin: auto;
+  }
+  .video-container {
+    width: 100%;
+    max-height: 40rem;
+    overflow: hidden;
+    z-index: -100;
+  }
+  .caption{
+    position: absolute;
+    bottom: 100px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.525;
+    background-color: #000000;
+    border-radius: 15px;
+  }
+  
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-weight: 400;
+    font-size: 40px;
+  }
+
+  .jumbotron {
+    margin-top: 100px;
+    background-color: #fff;
+  }
+
+  .jumbotron-heading {
+    font-weight: 300;
+  }
+  
+  .jumbotron .container {
+    max-width: 40rem;
+  }
+
+  .container{
+      max-width: 1200px;
+      width: 98%;
+      position: relative;
+  }
+
+  li a:hover{
+    text-decoration: none;
+  }
+
+  .socialLinks{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .socialLinks p{
+    color: #009fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .link{
+    display: table;
+    list-style: none;
+    padding: 0;
+    margin: auto;
+  }
+
+  .link li{
+    display: inline;
+    margin: 10px;
+  }
+
+  .fab{
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+    transform : scale(1,1);
+    transition : all 0.2s ease-in-out;
+  }
+  
+  .fab:hover{
+    transform : scale(1.2,1.2);
+    transition : all 0.2s ease-in-out;
+    text-decoration: none;
+  }
+
+  footer .fab{
+    border-radius: 50px;
+    background: #868383;
+    width: 70px;
+    height: 70px;
+    font-size: 45px;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  footer p {
+    margin-bottom: 0;
+  }
+
+  .footer-copyright{
+    font-size: 15px;
+    margin-top: 35px;
+    padding-bottom: 35px;
+    text-align: center;
+  }
+
+  footer {
+    background-color: white;
+    padding-top: 3rem;
+  }
+
+.marketing{
+    padding: 4rem 0;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    box-shadow: 0 0 10px #00000025;
+    background-color: white;
+    border-radius: 15px;
+    width: 95%;
+}
+
+  .marketing h2 {
+    font-weight: 400;
+  }
+
+  .pad{
+      padding: 1rem 5rem 1rem 5rem;
+  }
+
+  .featurette-divider {
+    width: 90%;
+    margin: 4rem auto;
+  }
+
+  .game-container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .games{
+    border-radius: 15px;
+    background: white;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 0 0 10px #00000025;
+  }
+
+  .coverImg{
+    display: block;
+    width: 250px;
+    height: auto;
+    transform : scale(1,1);
+    transition : all 0.15s ease-in-out;
+  }
+  
+  .coverImg:hover{
+    transform : scale(1.05,1.05);
+    transition : all 0.15s ease-in-out;
+  }
+
+  .info{
+    margin-bottom:1rem;
+  }
+  
+  .info p{
+    margin: 0;
+  }
+
+  .icon img {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+  #goTop {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    z-index: 200;
+    border: none;
+    outline: none;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+    padding: 6px 12px 5px 12px;
+    border-radius: 50px;
+    transition: visibility 0.15s, opacity 0.15s linear;
+  }
+  
+  #goTop:hover {
+    background-color: #555;
+  }
+  
+/* GALLERY */ /* Grid */
+
+.wrapper{
+  width: 100%;
+  padding: 10px;
+}
+
+.containerImg > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+.containerImg > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.containerImg {
+  padding-top: 50px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-auto-rows: 150px;
+  grid-auto-flow: dense; /* Fill all spaces with fitted images */
+}
+
+.horizontal {
+grid-column: span 3;
+grid-row: span 2;
+}
+.vertical {
+grid-column: span 2;
+grid-row: span 4;
+}
+.small {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.big {
+grid-column: span 2;
+grid-row: span 2;
+}
+.full {
+  grid-column: span 1;
+  grid-row: span 4;
+}
+
+
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
