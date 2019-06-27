@@ -43,6 +43,10 @@
       position: relative;
   }
 
+  .info p{
+    margin: 0;
+  }
+
   li a:hover{
     text-decoration: none;
   }
