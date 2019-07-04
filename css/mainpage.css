@@ -225,7 +225,7 @@
   }
 
   .games{
-    border-radius: 15px;
+    border-radius: 30px;
     background: white;
     padding: 15px;
     margin: 15px;
@@ -243,10 +243,6 @@
   .coverImg:hover{
     transform : scale(1.05,1.05);
     transition : all 0.15s ease-in-out;
-  }
-
-  .info{
-    margin-bottom:1rem;
   }
   
   .info p{
