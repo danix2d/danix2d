@@ -23,37 +23,31 @@
 
       <header>
             
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0" id="navbar">
-            <div class="container-navbar">
-              <button class="navbar-toggler btn btn-sm btn-outline-danger" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border-radius: 60px;padding: 0rem 0.4rem 0rem 0.4rem;border: 2px solid #dc3545;" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">
-                  <i class="fas fa-caret-down" style="font-size:35px; color:white;"></i>
-            </button>
 
-              <div class="collapse navbar-collapse" id="navbarNav">
-                      <div class="col-md text-center">
-                        <ul class="nav jumbotron-heading font-weight-normal">
-                              <li class="nav-item">
-                                  <a  href="#">Home</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a  href="#games">Games</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a  href="#gallery">Art</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a  href="#about">About</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a  href="#contact">Contact</a>
-                              </li>
-                            </ul>
-                    </div>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container-navbar">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation" style="border-color: rgb(140, 140, 140);">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a  href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  href="#games">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  href="#contact">Contact</a>
+                    </li>
+                </ul>
               </div>
-            </div>
             </nav>
-
-
+            </div>
 </header
 
     <main role="main">
@@ -63,21 +57,15 @@
           <div class="container-video p-0 mt-4 mb-4">
               <div class="overlay"></div>
               <section class="text-center caption">
-                  <div class="logo">
-                      <a href="#" class="">
-                        <img src="images/logo/logo.png"  width="200" height="100%"></img>
-                      </a>
-                    </div>
                   <h1 class="jumbotron-heading font-weight-bold">Danix2D</h1>
                   <h2 class="jumbotron-heading font-weight-normal">Independent game developer</h2>
-                  <p class="lead font-weight-normal">Discover my most recent games for mobile platforms or checkout my game art</p>
+                  <p class="lead font-weight-normal">Discover my most recent games for mobile platforms</p>
                   <p>
-                      <a href="#games" class="btn btn-primary my-2">Games</a>
-                      <a href="#gallery" class="btn btn-secondary my-2">Game Art</a>
+                      <a href="#games" class="btn btn-primary my-2 pl-4 pr-4">GAMES</a>
                     </p>
             </section>
               <div class="">
-                  <div class="full video-container">
+                  <div class="video-container">
                       <video autoplay="" muted="" loop="" id="video-bg">
                           <source src="images/video/dark.mp4" type="video/mp4">
                       </video>
@@ -85,8 +73,11 @@
               </div>
             </div>
 
+    <section class="jumbotron text-center mb-0 pb-0">
+          <div><a class="anchor" id="games"></a></div>
+    </section>
+
     <div class="container game-container">
-        <a class="anchor" id="games"></a>
 
         <!-- GAME -->
         <div class="row games">
@@ -104,35 +95,19 @@
                 <div class="marketBtn text-center">
                   <a class="btn btn-primary mr-2" href="#" role="button">Coming Soon</a>
                 </div>
-              </div>
-          </div>
-          <!-- /GAME -->
-
+            </div>
+        </div>
+          <!-- /GAME -->       
       </div><!-- /.container -->
     
+
+
     <section class="jumbotron text-center mb-0 pb-0">
-        <a class="anchor" id="gallery"></a>
-        <div class="container">
-          <h1 class="jumbotron-heading">GAME ART GALLERY</h1>
-        </div>
-        <hr class="featurette-divider mt-0 mb-0">
-      </section>
-
-
-
-      <div class="container">
-          <div class="containerImg">
-            <div class="big"><img src="images/gallery/Thumbnail.png" alt=""></div>
-            <div class="big"><img src="images/gallery/Thumbnail.png" alt=""></div>
-            <div class="big"><img src="images/gallery/Thumbnail.png" alt=""></div>
-          </div>
-        </div>
-        
-
-
+      <a class="anchor" id="about"></a>
+    </section>
 
       <div class="container marketing">
-          <a class="anchor" id="about"></a>
+
           
           <div class="row featurette">
               <div class="col-md-5 text-center">
@@ -140,7 +115,7 @@
               </div>
             <div class="col-md-7 pad">
               <h2 class="featurette-heading">About Me</h2>
-              <p class="lead">My name is Danny and I am a young independent game developer. I do everything in the development process of my games, 
+              <p class="lead">My name is Danny and I am a self-taught independent game developer. I do everything in the development process of my games, 
                   like the coding, game-art, drawing 2D or modeling 3D assets, level-design, debugging and testing.</p>
             </div>
           </div>
@@ -184,16 +159,16 @@
                     <div class="socialLinks"><p class="lead">Social Links</p></div>
                     <ul class="link">
                           <li>
-                              <a class = "social" href="https://twitter.com/danix2d" target="_blank" rel="nofollow"> <i class="fab fa-twitter"></i></a>
+                              <a class = "social" href="https://twitter.com/danix2d" target="_blank" rel="nofollow"> <i class="fab fa-twitter" style="background-color: rgb(0, 172, 237)"></i></a>
                           </li>
                           <li>
-                              <a class = "social" href="https://twitter.com/danix2d" target="_blank" rel="nofollow"> <i class="fab fa-twitter"></i></a>
+                              <a class = "social" href="" target="_blank" rel="nofollow"> <i class="fab fa-instagram" style="background-color: rgb(240, 0, 132)"></i></a>
                           </li>
                           <li>
-                              <a class = "social" href="" target="_blank" rel="nofollow"><i class="fab fa-google-play"></i></a>
+                              <a class = "social" href="" target="_blank" rel="nofollow"><i class="fab fa-google-play" style="background-color: rgb(0, 179, 149)"></i></a>
                           </li>
                           <li>
-                              <a class = "social" href="https://www.youtube.com/channel/UCa2J0-Q47psyadMpNeN633g" target="_blank" rel="nofollow"><i class="fab fa-youtube"></i></a>
+                              <a class = "social" href="https://www.youtube.com/channel/UCa2J0-Q47psyadMpNeN633g" target="_blank" rel="nofollow"><i class="fab fa-youtube" style="background-color: rgb(224, 0, 0)"></i></a>
                           </li>                            
                       </ul>
                       <div class="socialLinks"><p class="lead">Contact Email</p></div>

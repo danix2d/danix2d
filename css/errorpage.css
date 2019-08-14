@@ -23,6 +23,7 @@
 
   .container-navbar{
     padding: 0px 20px 0px 20px;
+    padding: 5px;
     margin: auto;
     width: 95%;
     display: flex;
