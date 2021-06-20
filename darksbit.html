@@ -8,27 +8,29 @@
 <meta name="description" content="Darksbit is a 2D adventure, side-scroller platoformer mobile game made with Unity Game Engine">
 <meta name="keywords" content="Unity, indie, mobile, games, development, google play, android, madewithunity, darksbit">
 <meta name="author" content="Danny">
-<meta title="">
+<meta title="Darksbit">
 <title>Darksbit</title>
 
 <link rel="canonical" href="https://danix2d.com" />
+
 <link rel="stylesheet" href="css/gamePage.css">
+<link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/googleBtn.css">
 <link rel="stylesheet" href="css/embla-carousel.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 <link rel="shortcut icon" type="image/x-icon" href="images/logo/siteLogo.png" />
 </head>
 
 
-<header>
+
+<header class="fixed-top">
+  <div class="wrapCont">
     <div class="pageNav">
-    <div class="games-btn text-secondary">
-        <a href="https://danix2d.com/" class=""> < Back to Games</a>
+      <div class="backBtn">
+          <a href="https://danix2d.com/#Games" class="">< Back to Games</a>
+      </div>
+      <div class="current"><span class="separator">|</span>Darksbit</div>
     </div>
-    <div class="current"><span class="separator">|</span>Darksbit</div>
   </div>
 </header>
 
@@ -36,97 +38,87 @@
 <body>
 
 
-<div class="carouselBG" style="background-image: url(images/Darksbit/cover.png);">
-  <div class="blur">
-  </div>  
-</div>
-
-
-<div class="page-carousel">
-  <div class="embla">
-    <div class="embla__viewport">
-      <div class="embla__container">
-        <div class="embla__slide">
-          <div class="embla__slide__inner">
-            <video controls autoplay muted class="embla__slide__video"><source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" size="720"></video>
-          </div>
-        </div>
-        <div class="embla__slide">
-          <div class="embla__slide__inner">
-            <img class="embla__slide__img" src="images/Darksbit/cover.png" />
-          </div>
-        </div>
-        <div class="embla__slide">
-          <div class="embla__slide__inner">
-            <img class="embla__slide__img" src="images/Darksbit/cover.png" />
-          </div>
-        </div>
-        <div class="embla__slide">
-          <div class="embla__slide__inner">
-            <img class="embla__slide__img" src="images/Darksbit/cover.png" />
-          </div>
-        </div>
-        <div class="embla__slide">
-          <div class="embla__slide__inner">
-            <img class="embla__slide__img" src="images/Darksbit/cover.png" />
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
-</div>
-
-
-
-<div class="game-section">
   <div class="wrapCont">
+
+    <div class="cover">
+
+      <!-- <video controls autoplay muted class="videoCover"><source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" size="720"></video> -->
+      <img class="videoCover" src="images/Darksbit/cover.png" alt="Darksbit Game">
+    </div>
+  
+  
+    <div class="game-section">
+          <div class="grid-flex">
+            <div class="coverImg"><img class="" src="images/Darksbit/cover.png" /></div>
+            <div class="description"> 
+              Embark on an awesome adventure to the unknown world of Darksbit.
+            </div>
+            <div class="getBtn">
+              <div class="btn-cover">
+                   <a class="btn btn-google" href="#" title="Google Play">Google Play</a>
+              </div>
+            </div>
+          </div>
     
-      <div class="grid-flex">
-        <div class="cover"><img class="" src="images/Darksbit/cover.png" /></div>
-        <div class="description"> 
-          Embark on the adventure of the unknown world of Darksbit.
-        </div>
-        <div class="getBtn">
-          <div class="btn-cover">
-               <a class="btn btn-google" href="#" title="Google Play">Google Play</a>
+          <div class="grid">
+              <div class="about">About Darksbit</div>
+              <div class="grid-nested">
+                <div class="tags">
+                  <p class="mb-0 text-secondary">Tags</p>
+                  <p>Adventure, Platformer, Side-Scroller</p>
+                </div>
+                <div class="releaseDate">
+                  <p class="mb-0 text-secondary">Release Date</p>
+                  <p>TBA</p>
+                </div>
+                <div class="platforms">
+                  <p class="mb-0 text-secondary">Platform</p>
+                  <p>Android</p>
+                </div>
+                <div class="fullDescription">
+                  <p class="text-secondary">Game Description</p>
+                  <p>Darksbit is a 2D side-scroller platformer with a different kind of character controlls. 
+                    Embark on an awesome adventure to the unknown world of Darksbit. Pass trough spikes, 
+                    blades and traps, collect the hidden bits to unlock the matrix or else the world of Darksbit will collapse.</p>
+                </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="grid">
-          <div class="about">About Darksbit</div>
-          <div class="grid-nested">
-            <div class="tags">
-              <p class="mb-0 text-secondary">Tags</p>
-              <p>Adventure, Platformer, Side-Scroller</p>
-            </div>
-            <div class="releaseDate">
-              <p class="mb-0 text-secondary">Release Date</p>
-              <p>TBA</p>
-            </div>
-            <div class="platforms">
-              <p class="mb-0 text-secondary">Platform</p>
-              <p>Android</p>
-            </div>
-            <div class="fullDescription">
-              <p class="text-secondary">Game Description</p>
-              <p>Darksbit is a 2D side-scroller platformer with a different kind of character controlls. 
-                Embark on the adventure of the unknown world of Darksbit. Pass trough spikes, 
-                blades and traps, collect the hidden bits to unlock the matrix or else the world of Darkalone will collapse.</p>
+
+        <div class="page-carousel">
+          <div class="embla">
+            <div class="embla__viewport">
+              <div class="embla__container">
+                <div class="embla__slide">
+                  <div class="embla__slide__inner">
+                    <img class="embla__slide__img" src="images/Darksbit/cover.png" />
+                  </div>
+                </div>
+                <div class="embla__slide">
+                  <div class="embla__slide__inner">
+                    <img class="embla__slide__img" src="images/Darksbit/cover.png" />
+                  </div>
+                </div>
+                <div class="embla__slide">
+                  <div class="embla__slide__inner">
+                    <img class="embla__slide__img" src="images/Darksbit/cover.png" />
+                  </div>
+                </div>
+                <div class="embla__slide">
+                  <div class="embla__slide__inner">
+                    <img class="embla__slide__img" src="images/Darksbit/cover.png" />
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
-      </div>
+        </div>
+  
+    <div class="footer text-secondary">
+      <p>Copyright © 2020 - 2021. All Rights Reserved.</p>
     </div>
   </div>
-
-
-                  
-            
-      <div class="footer text-secondary">
-        <p>Copyright © 2020 - 2021. All Rights Reserved.</p>
-      </div>
-
-
 
 
 
