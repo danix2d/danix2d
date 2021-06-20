@@ -1,111 +1,55 @@
+:root {
+  --navColor: rgb(170, 170, 170);
+  --bgColor: rgb(235, 235, 245) !important;
+  --shadow: inset 0 0 10px 0px #0000001f;
+  --linkHover: #1672c1;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
 html {
   height: 100%;
+	scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
-  width: 0.5rem;
+  width: 0.6rem;
 }
 
 body::-webkit-scrollbar-track {
-  background: #0d052f;
+  background: rgb(235, 235, 245, 0);
+  box-shadow: inset 0 0 10px 0px #0000002a;
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #500992;
+  background: rgb(200, 200, 200,0.4);
+  border-radius: 5rem;
+  box-shadow: inset 0 0 10px 0px #00000027;
 }
 
 a{
-  text-decoration: none!important;
+  text-decoration: none !important;
 }
 
 header{
-    position: absolute;
-    top: 0;
-    z-index: 90000;
-    width: 100%;
+  background-color: var(--bgColor);
+  box-shadow: var(--shadow);
+  width: 100%;
+  height: 70px;
 }
 
 body{
-    color: rgb(219, 219, 219)!important;
+  background-color: var(--bgColor) !important;
+  font-family: 'Arial' !important;
 }
 
 .wrapCont{
-  width: 95%;
-  margin: auto;
-}
-
-.navbar {
   max-width: 1150px;
+  width: 90%;
   margin: auto;
-  position: relative;
-  padding-bottom: 0;
-  align-items: center;
-  height: 70px;
-  border-radius: 3rem;
-  box-shadow: 0 0 8px 3px #0d052f7d;
-  background-image: linear-gradient(to right, #0d052f, rgb(0 0 0 / 0%));
-  backdrop-filter: blur(5px);
-}
-
-.navbar-social{
-  max-width: 1150px;
-  margin: auto;
-  position: relative;
-  padding-bottom: 0;
-  align-items: center;
-  height: 60px;
-  background: rgba(35, 35, 35, 0);
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.main-nav-social {
-  list-style-type: none;
-  display: none;
-  height: 100%;
-}
-
-.nav-links{
-  color: rgb(255 169 119);
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  line-height: 115px;
-}
-.nav-links:hover {
-  color: rgba(255, 255, 255, 1);
-}
-
-.soc-links{
-  color: rgb(255, 255, 255);
-}
-.soc-links:hover{
-  color: rgb(255, 255, 255);
-}
-
-.navbar-nav li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.main-nav-social li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: scale(1);
-  transition: transform 200ms;
-}
-
-.main-nav-social li:hover {
-  transform: scale(1.4);
-  transition: transform 200ms;
-}
-
-
-.logo {
-  width: auto;
-  height: 125%;
 }
 
 .footer {
@@ -121,136 +65,5 @@ body{
   align-items: center;
 }
 
-@media screen and (min-width: 767px) {
 
-  .navbar {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 0;
-      align-items: center;
-  }
 
-  .navbar-social {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 0;
-    align-items: center;
-  }
-
-  .navbar-nav {
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      
-  }
-
-  .main-nav-social {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-  .navbar-nav li {
-      margin: 0;
-      margin-left: 35px;
-  }
-
-  .main-nav-social li {
-    margin-left: 35px;
-    font-size: 20px;
-  }
-
-  .games-btn{
-    margin-top: 0.4rem;
-    padding-left: 12px;
-    padding-right: 12px;
-    background: #0d052f;
-    border-radius: 5rem;
-    height: 45px;
-    transition: transform 200ms;
-  }
-  .games-btn a{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    line-height: 44px;
-  }
-
-  .games-btn:hover{
-    transform: scale(1.1)!important;
-    transition: transform 200ms;
-  }
-
-  .games-btn > a {
-    color: rgb(109 176 244);
-    text-transform: uppercase;
-    font-size: small;
-    font-weight: 700;
-  }
-
-  .logo {
-      margin-top: 0;
-  }
-
-}
-
-@media screen and (max-width: 767px) {
-
-  .navbar-social{
-    display: none;
-  }
-
-  .navbar-toggler {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    padding: 0 25px!important;
-    border-radius: 5rem!important;
-  }
-  
-  .navbar-toggler:hover {
-    background-color: rgb(23, 116, 255);
-  }
-  
-  .navbar-toggler i{
-    transform: scale(1);
-    transition: all 200ms;
-  }
-  
-  .navbar-toggler i:hover{
-    transform: scale(1.4);
-    transition: all 200ms;
-  }
-
-  .navbar{
-    margin: 1.5rem;
-  }
-
-  .navbar-nav {
-    position: relative;
-    top: 62px;
-    margin: 0;
-    padding: 0;
-    width: 90%;
-    margin: auto;
-  }
-
-  .navbar-nav > li{
-    background-color: #0d052f;
-    /* margin: 0 1.2rem; */
-    height: 7rem;
-  }
-
-  .navbar-nav > li:hover {
-    background-color: rgb(45, 27, 124);
-  }
-
-}

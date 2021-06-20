@@ -1,99 +1,96 @@
-* {
-	margin: 0;
-	padding: 0;
-  }
 
-html {
-	scroll-behavior: smooth;
-  }
-
-  .keyart {
-	position: fixed;
-	z-index: 10;
-	display: block;
-  }
-
-  .keyart_layer {
-	  background-position: top;
-	  background-size: cover;
-	  background-repeat: repeat-x;
-	  width: 100%;
-	  position: fixed;
-  }
-  
-  .keyart, .keyart_layer {
-	height: 850px;
-  }
-
-  .keyart_layer.parallax {
-	  position: fixed;
-  }
-	  #keyart-0 {
-		background-image: url(../images/cover/bg0.png);
-		background-color: #0d052f;
-	  }
-	  #keyart-1 {
-		background-image: url(../images/cover/bg1.png);
-	  }
-	  #keyart-2 {
-		background-image: url(../images/cover/bg2.png);
-	  }
-	  #keyart-3 {
-		background-image: url(../images/cover/bg3.png);
-	  }
-	  #keyart-4 {
-		background-image: url(../images/cover/bg4.png);
-	  }
-	  #keyart-5 {
-		background-image: url(../images/cover/bg5.png);
-	  }
-	  #keyart-6 {
-		background-image: url(../images/cover/bg6.png);
-	  }
-	  #keyart-7 {
-		background-image: url(../images/cover/bg7.png);
-	  }
-	  #keyart-8 {
-		background-image: url(../images/cover/bg8.png);
-	  }
-	  #keyart-9 {
-		background-image: url(../images/cover/bg9.png);
-	  }
-	  #keyart-10 {
-		background-image: url(../images/cover/bg10.png);
-	  }
-    #keyart-11 {
-		  background-color: #0d052f;
-      top: 53rem;
-      height: 10rem;
-    }
-	  #keyart-scrim {
-		  background-color: #0d052f;
-		  opacity: 0;
-	  }
-  
-  
-  .game-section {
-	margin-top: 53rem;
-	display: block;
-	width: 100%;
-	background: #0d052f;
-	position: absolute;
-	z-index: 30;
-  }
-  
-  .wrapper {
-    max-width: 1000px;
+  .navbar {
+    max-width: 1185px;
     margin: auto;
+    position: relative;
+    padding-bottom: 0;
+    align-items: center;
+    height: 70px;
+    padding: 0 !important;
+  }
+  
+  .main-nav-social {
+    list-style-type: none;
+    display: none;
+    height: 100%;
+  }
+  
+  .nav-links{
+    color: var(--navColor);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 115px;
+    font-weight: 700;
+  }
+  .nav-links:hover {
+    color: var(--linkHover);
+  }
+  
+  .soc-links{
+    color: var(--navColor);
+  }
+  .soc-links:hover{
+    color: var(--linkHover);
+  }
+  
+  .navbar-nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-nav-social li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1);
+    transition: transform 200ms;
+  }
+  
+  .main-nav-social li:hover {
+    transform: scale(1.4);
+    transition: transform 200ms;
+  }
+  
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .cover{
+    width: 100%;
+    height: 555px;
+    border-radius: 1rem;
+    box-shadow: 0 0 7px 0px #0000001f;
+    background-color: white;
+    background-image: url("../images/cover/landscape.jpg");
+    background-size: cover;
+    background-position: bottom;
+    margin-top: 5.5rem;
+  }
+
+  .cards{
+    width: 100%;
+    height: 350px;
+    border-radius: 1rem;
+    box-shadow: inset 0 0 10px 0px #0000001f;
+    overflow: hidden;
+  }
+
+  .wrapper {
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5rem;
+    gap: 1.5rem;
   }
+
   .Title {
-    max-width: 1000px;
     margin: auto;
-    margin-top: 5rem;
-    margin-bottom: 2rem;
+    margin-top: 10rem;
+    margin-bottom: 1.5rem;
   }
   .item {
     grid-auto-columns: min-content;
@@ -107,14 +104,13 @@ html {
   .img-cover{
     object-fit: cover;
     width: 100%;
-    height: 320px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 5px #00000033;
+    height: 100%;
     transform: scale(1);
     transition: all 200ms;
   }
+
   .img-cover:hover{
-    transform: scale(1.05);
+    transform: scale(1.15);
     transition: all 200ms;
   }
 
@@ -129,63 +125,210 @@ html {
       color: rgb(135, 135, 135);
       font-size: large;
   }
+
   .Title > h1{
     font-size: x-large;
   }
+
   .title-cover{
     margin-top: 1rem;
     margin-bottom: 0;
     font-size: x-large;
   }
+
   .description-cover{
     color: rgb(135, 135, 135);
   }
+
   .date-cover{
       padding-top: 15px
   }
 
-  @media only screen and (max-width: 992px) {
-
+  @media screen and (max-width: 992px){
+    .navbar-toggler {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      padding: 0 25px!important;
+      border-radius: 5rem!important;
+    }
+    
+    .navbar-toggler i{
+      transform: scale(1);
+      transition: all 200ms;
+      color: black;
+    }
+    
+    .navbar-toggler i:hover{
+      transform: scale(1.4);
+      transition: all 200ms;
+      color: black;
+    }
+  
     .Title {
       max-width: 600px;
       margin: auto;
       margin-top: 5rem;
       margin-bottom: 2rem;
     }
-
+  
     .wrapper {
       max-width: 600px;
       grid-template-columns: repeat(2, 1fr);
-      gap: 5rem;
+      gap: 2rem;
+    }
+  
+    .cards{
+      height: 270px;
     }
   }
 
+  
+@media screen and (max-width: 991px) {
 
-  @media screen and (max-width: 767px) {
-
-    .keyart_layer {
-      background-position-x: 65%;
-    }
-
-	  #keyart-10 {
-      background-image: url(../images/cover/bg10.png);
-      background-position-x: 35%;
-    }
-    
-
+  .logo{
+    position: absolute;
+    z-index: 100;
   }
 
-  @media only screen and (max-width: 600px) {
-    .Title {
-      text-align: center;
-      margin: 6rem 2rem 3rem 2rem;
-    }
-    .Title > h3{
-      font-size: medium;
-    }
-    .wrapper {
-      max-width: 250px;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 5rem;
-    }
+  header > .wrapCont{
+    width: 95%;
   }
+
+  .navbar-social{
+    display: none;
+  }
+
+  .navbar-nav {
+    position: relative;
+    top: 70px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin: auto;
+    height: calc(100vh - 70px);
+  }
+
+  .navbar-nav > li{
+    background-color: var(--bgColor);
+    height: 100%;
+  }
+
+  .navbar-nav > li:hover {
+    background-color: var(--linkHover);
+  }
+
+  .navbar-nav > li > a:hover{
+    color: var(--bgColor);
+  }
+}
+
+  @media screen and (min-width: 992px) {
+
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 0;
+      align-items: center;
+  }
+
+  .navbar-social {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    align-items: center;
+  }
+
+  .navbar-nav {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+  }
+
+  .navbar-collapse{
+    justify-content: space-between;
+  }
+
+  .main-nav-social {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+  .navbar-nav li {
+      margin: 0;
+      margin-left: 35px;
+  }
+
+  .main-nav-social li {
+    margin-left: 35px;
+    font-size: 20px;
+  }
+
+  .games-btn{
+    padding-left: 12px;
+    padding-right: 12px;
+    background: var(--linkHover);
+    border-radius: 5rem;
+    height: 40px;
+    transition: transform 200ms;
+  }
+
+  .games-btn a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+  }
+
+  .games-btn:hover{
+    transform: scale(1.1)!important;
+    transition: transform 200ms;
+  }
+
+  .games-btn > a {
+    color: rgb(235 235 245);
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: 700;
+  }
+
+  .games-btn > a:hover {
+    color: rgb(235 235 245);
+  }
+
+  .logo {
+      margin-top: 0;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .Title {
+    text-align: center;
+    margin: 6rem 2rem 3rem 2rem;
+  }
+  .Title > h3{
+    font-size: medium;
+  }
+  .wrapper {
+    max-width: 335px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+  }
+  .cards{
+    height: 300px;
+  }
+
+  .cover{
+    background-position: 75%;
+  }
+}
+

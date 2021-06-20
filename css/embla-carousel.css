@@ -33,12 +33,12 @@
 .embla__slide__inner {
   overflow: hidden;
   position: relative;
-  height: 500px;
+  /* height: 500px; */
   transform: scale(0.8);
   transition: all 150ms ease-in-out;
   background: black;
-  box-shadow: 0 0 10px 5px #0d052f40;
-  border-radius: 0.7rem;
+  /* box-shadow: 0 0 10px 5px #0d052f40; */
+  border-radius: 1rem;
 }
 .is-selected .embla__slide__inner{
   transform: scale(0.95);
