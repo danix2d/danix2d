@@ -1,0 +1,70 @@
+/* GOOGLE BTN */
+
+a.btn-google{
+    color:#fff
+  }
+  .btn{
+    margin:0px;
+    font-size:16px;
+    border-radius:8px!important;
+    text-align:center;
+    white-space:nowrap;
+    vertical-align:middle;
+    -ms-touch-action:manipulation;
+    touch-action:manipulation;cursor:pointer;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    border: 1px solid;
+    font-weight:500;
+    text-decoration:none;
+    display:inline-block
+  }
+  .btn:active:focus,.btn:focus{
+    outline:0
+  }
+  .btn:focus,.btn:hover{
+    color:#333;
+    text-decoration:none;
+    outline:0
+  }
+  .btn:active{
+    outline:0;
+    -webkit-box-shadow:inset 0 3px 5px rgba(0,0,0,.125);
+    box-shadow:inset 0 3px 5px rgba(172, 127, 127, 0.125)
+  }
+  .btn-google{
+    color:#fff!important;
+    background-color: #242424!important;
+    border: 2px solid black !important;
+    padding:15px 7px 5px 43px !important;
+    position:relative;
+  }
+  .btn-google:focus{
+    background-color:#555;
+    border-color:#000
+  }
+  .btn-google:active,.btn-google:hover{
+    background-color:rgb(70, 70, 70)!important;
+    border-color:#000;
+  }
+  .btn-google:before{
+    content:"";
+    background-image: url(../images/gpl.svg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:30px;height:30px;
+    position:absolute;
+    left:6px;
+    top:50%;
+    margin-top:-15px
+  }
+  .btn-google:after{
+    content:"GET IT ON";
+    position:absolute;
+    top:3px;
+    left:35px;
+    font-size:10px;
+    font-weight:400
+  }
