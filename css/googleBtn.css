@@ -36,8 +36,8 @@ a.btn-google{
   }
   .btn-google{
     color:#fff!important;
-    background-color: #000b31!important;
-    border-color: rgb(4 43 127)!important;
+    background-color: #242424!important;
+    border: 2px solid black !important;
     padding:15px 7px 5px 43px !important;
     position:relative;
   }
@@ -46,7 +46,7 @@ a.btn-google{
     border-color:#000
   }
   .btn-google:active,.btn-google:hover{
-    background-color:rgb(19, 55, 109)!important;
+    background-color:rgb(70, 70, 70)!important;
     border-color:#000;
   }
   .btn-google:before{
