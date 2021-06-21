@@ -1,0 +1,358 @@
+
+  .navbar {
+    max-width: 1185px;
+    margin: auto;
+    position: relative;
+    padding-bottom: 0;
+    align-items: center;
+    height: 70px;
+    padding: 0 !important;
+  }
+  
+  .main-nav-social {
+    list-style-type: none;
+    display: none;
+    height: 100%;
+  }
+  
+  .nav-links{
+    color: #aaa !important;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-weight: 700;
+    line-height: 40px;
+    padding: 0 0.8rem;
+  }
+
+  .soc-links{
+    color: #aaa;
+    width: 40px;
+    height: 40px;
+    transition: all 250ms;
+  }
+  .soc-links:hover{
+    color: #aaa;
+    background: #303030;
+    border-radius: 10rem;
+    transition: all 250ms;
+  }
+  
+  .navbar-nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-nav-social li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-nav-social > li > a > i{
+    padding: 0.6rem;
+  }
+
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .cover{
+    width: 100%;
+    height: 555px;
+    border-radius: 1rem;
+    box-shadow: 0 0 8px 4px #00000050;
+    background-color: white;
+    background-image: url("../images/cover/landscape.jpg");
+    background-size: cover;
+    background-position: bottom;
+    margin-top: 7.5rem;
+  }
+
+  .cards{
+    width: 100%;
+    height: 350px;
+    border-radius: 1rem;
+    /* box-shadow: inset 0 0 10px 0px #0000001f; */
+    box-shadow: 0 0 10px 4px #0000002b;
+    overflow: hidden;
+  }
+
+  .wrapper {
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .Title {
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 2.5rem;
+  }
+  .item {
+    grid-auto-columns: min-content;
+    padding-top: 50px;
+  }
+  .grid-item-nested {
+    display: grid;
+    grid-auto-rows: minmax(auto, auto);
+  }
+
+  .img-cover{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: all 200ms;
+  }
+
+  .img-cover:hover{
+    transform: scale(1.15);
+    transition: all 200ms;
+  }
+
+  .empty-img{
+    width: 100%;
+    height: 320px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px #00000033;
+  }
+
+  .Title > h3{
+      color: #aaa !important;
+      font-size: 20px;
+  }
+
+  .Title > h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .title-cover{
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .description-cover{
+    color: #aaa !important;
+    font-size: 20px;
+  }
+
+  .date-cover{
+      padding-top: 15px;
+      color: #aaa !important;
+      font-size: 17px;
+  }
+
+  @media screen and (max-width: 992px){
+    .navbar-toggler {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      padding: 0 25px!important;
+      border-radius: 5rem!important;
+      border: none !important;
+    }
+    
+    .navbar-toggler i{
+      transform: scale(1);
+      transition: all 200ms;
+      color: #aaa;
+    }
+    
+    .navbar-toggler i:hover{
+      transform: scale(1.4);
+      transition: all 200ms;
+      color: black;
+    }
+  
+    .Title {
+      max-width: 600px;
+      margin: auto;
+      margin-top: 5rem;
+      margin-bottom: 2rem;
+    }
+  
+    .wrapper {
+      max-width: 600px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  
+    .cards{
+      height: 270px;
+    }
+  }
+
+  
+@media screen and (max-width: 991px) {
+
+  .logo{
+    position: absolute;
+    z-index: 100;
+  }
+
+  header > .wrapCont{
+    width: 95%;
+  }
+
+  .navbar-social{
+    display: none;
+  }
+
+  .navbar-nav {
+    position: relative;
+    top: 70px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin: auto;
+    height: calc(100vh - 70px);
+  }
+
+  .navbar-nav > li{
+    background-color: var(--navColor);
+    height: 100%;
+    transition: all 250ms;
+  }
+
+  .navbar-nav > li:hover {
+    background-color: #303030;
+    transition: all 250ms;
+  }
+
+  .navbar-nav > li > a:hover{
+    color: var(--bgColor);
+  }
+
+  .nav-links{
+    line-height: 8rem;
+  }
+}
+
+  @media screen and (min-width: 992px) {
+
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 0;
+      align-items: center;
+  }
+
+  .navbar-social {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    align-items: center;
+  }
+
+  .navbar-nav {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+  }
+
+  .navbar-collapse{
+    justify-content: space-between;
+  }
+
+  .main-nav-social {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+  .navbar-nav li {
+    margin-left: 15px;
+    transition: all 250ms;
+  }
+
+  .navbar-nav li:hover{
+    background: #303030;
+    border-radius: 10rem;
+    transition: all 250ms;
+  }
+
+  .main-nav-social li {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+  .games-btn{
+    padding-left: 20px;
+    padding-right: 20px;
+    /* background-image: linear-gradient(45deg,#ff5678,#d041ab); */
+    background-image: linear-gradient(45deg,#0b78b8,#d119ba);
+    border-radius: 5rem;
+    height: 40px;
+    transition: transform 200ms;
+    margin-left: 30px !important;
+  }
+
+  .games-btn a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 42px;
+  }
+
+  .games-btn:hover{
+    transform: scale(1.1)!important;
+    transition: transform 200ms;
+  }
+
+  .games-btn > a {
+    color: rgb(235 235 245);
+    /* text-transform: uppercase; */
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .games-btn > a:hover {
+    color: rgb(235 235 245);
+  }
+
+  .logo {
+      margin-top: 0;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .Title {
+    text-align: center;
+    margin: 6rem 2rem 3rem 2rem;
+  }
+  .Title > h3{
+    font-size: medium;
+  }
+  .wrapper {
+    max-width: 335px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+  }
+  .cards{
+    height: 300px;
+  }
+
+  .cover{
+    background-position: 75%;
+  }
+}
+
