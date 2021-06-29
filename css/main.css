@@ -59,11 +59,48 @@ header{
 
 .goto{
   position: relative;
-  top: 3rem;
+  top: -6rem;
 }
 
 .lead{
   color: #aaa !important;
+}
+
+
+.divider{
+  width: 100%;
+  color: #fff;
+  margin-top: 10rem;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.divider {
+  overflow: hidden;
+  text-align: center;
+}
+
+.divider:before,
+.divider:after {
+  background-color: #3f3f3f;
+  content: "";
+  display: inline-block;
+  height: 3px;
+  position: relative;
+  vertical-align: middle;
+  border: ra;
+  border-radius: 10rem;
+  width: 50%;
+}
+
+.divider:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.divider:after {
+  left: 0.5em;
+  margin-right: -50%;
 }
 
 .footer {

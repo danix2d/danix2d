@@ -72,48 +72,6 @@ html {
   object-fit: cover;
 }
 
-.divider{
-  width: 100%;
-  max-width: 1024px;
-  color: #fff;
-  margin-top: 10rem;
-  font-weight: 600;
-  font-size: 32px;
-}
-
-.divider {
-  overflow: hidden;
-  text-align: center;
-}
-
-.divider:before,
-.divider:after {
-  background-color: #3f3f3f;
-  content: "";
-  display: inline-block;
-  height: 3px;
-  position: relative;
-  vertical-align: middle;
-  border: ra;
-  border-radius: 10rem;
-  width: 50%;
-}
-
-.divider:before {
-  right: 0.5em;
-  margin-left: -50%;
-}
-
-.divider:after {
-  left: 0.5em;
-  margin-right: -50%;
-}
-
-.shortDesc{
-  text-align: center;
-  margin-top: 1.5rem;
-}
-
 .btn-cover{
   margin-top: 1.5rem;
 }
@@ -141,6 +99,16 @@ html {
   color: #fff;
   font-weight: 600;
 }
+
+.shortDesc{
+  max-width: 650px;
+  margin: auto;
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+
 
 /* .grid-flex {
   display: flex;

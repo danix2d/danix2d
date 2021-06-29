@@ -153,6 +153,15 @@
       font-size: 17px;
   }
 
+  .shortDesc{
+    max-width: 550px;
+    margin: auto;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  
+
   @media screen and (max-width: 992px){
     .navbar-toggler {
       display: flex;
